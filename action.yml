@@ -24,6 +24,9 @@ inputs:
   SSH_PRIVATE_KEY:
     description: 'Your ssh private key that is paired with a public key that is uploaded to Gigalixir'
     required: ${MIGRATIONS}
+  DEPLOYMENT_ENV:
+    description: 'An environment variable useful for namespacing deployments e.g. INTEGRATION, PRODUCTION'
+    required: false
 
 runs:
   using: 'node12'
