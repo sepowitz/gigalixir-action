@@ -35,6 +35,7 @@ deploy:
         GIGALIXIR_PASSWORD: ${{ secrets.GIGALIXIR_PASSWORD }}
         MIGRATIONS: false  # defaults to true
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        DEPLOYMENT_ENV: ${{ secrets.DEPLOYMENT_ENV }} # optional
 ```
 
 ## Migrations
